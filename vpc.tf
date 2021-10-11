@@ -1,4 +1,4 @@
-resource "aws_vpc" "production"{
+resource "aws_vpc" "staging"{
     cidr_block = "192.178.0.0/16"
 
     tags = {
