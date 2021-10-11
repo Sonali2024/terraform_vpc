@@ -1,5 +1,5 @@
 resource "aws_subnet" "public" {
-  vpc_id     = aws_vpc.production.id
+  vpc_id     = aws_vpc.staging.id
   cidr_block = "192.178.1.0/24"
 
   tags = {
@@ -8,7 +8,7 @@ resource "aws_subnet" "public" {
 }
 
 resource "aws_subnet" "private" {
-  vpc_id     = aws_vpc.production.id
+  vpc_id     = aws_vpc.staging.id
   cidr_block = "192.178.2.0/24"
 
   tags = {
