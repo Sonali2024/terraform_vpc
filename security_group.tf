@@ -1,4 +1,4 @@
-resource "aws_security_group" "prod-SG" {
+resource "aws_security_group" "stag-SG" {
   name        = "${var.project_name}-${var.environment}-SG"
   description = "Allow TLS inbound traffic"
   vpc_id      = aws_vpc.staging.id
